@@ -1,0 +1,19 @@
+{
+  "name": "silicon-valley-1",
+  "version": "1.0.0",
+  "description": "proyecto silicon valley - desafío 1, nivel 1: sección de comentarios.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anto-caroca"
+  },
+  "keywords": [
+    "comentarios",
+    "firebase"
+  ],
+  "author": "Antonella Caroca Sanhueza",
+  "license": "ISC"
+}
