@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Silicon Valley Desafío 1 - Sección de Comentarios</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <section>
+        <div id="div">
+            
+            <textarea class="form-control" id="comments" rows="3" aria- placeholder="ingresa tu comentario..."></textarea>
+            <button id="publish" onclick="saveMessage()" type="button" class="btn btn-primary">Publicar Comentario</button>
+        </div>
+        <h2>Comentarios</h2>
+        <div id="displayMessages">
+            
+        </div>
+    </section>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDeV9Vl1Lu1lSuoAhXlHvz1SO7Y65yE9E0",
+    authDomain: "silicon-valley-comentarios.firebaseapp.com",
+    databaseURL: "https://silicon-valley-comentarios.firebaseio.com",
+    projectId: "silicon-valley-comentarios",
+    storageBucket: "silicon-valley-comentarios.appspot.com",
+    messagingSenderId: "269549664533"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="src/js/app.js"></script>
+</body>
+</html>
